@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;	
+	border: 0;
+}
+
+body {
+	text-align: center;
+	font: bold 40pt 宋体;
+}
+.no-select {
+	user-select: none;
+}
+.wrap {
+	margin: 0 auto;
+	width: 650px;
+	height: 600px;
+}
+#main{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	background: #61befb url(../img/main_bk.jpg) left bottom no-repeat;
+	overflow: hidden;
+	margin-top: 40px;
+}
+#about-us {
+	position: absolute;
+	height: 20px;
+	top: 0;
+	right: 10px;
+	font: small normal;
+	font-family: cursive;
+	color: #1EAA3A;
+	cursor: pointer;
+	font-size: 14px;
+}
+#index, #begin, #over {
+	position: absolute;
+	bottom: 0;
+	left: 170px;
+	width: 300px;
+	height: 350px;
+	text-align: center;
+  z-index: 998;
+}
+#rull-bar {
+	width: 100%;
+	height: 5%;
+	/*background: #027D4D;*/
+}
+.progress {
+	height: 30px;
+	overflow: hidden;
+	background-color: #f7f7f7;
+	background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+	background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+	background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.active-bar {
+	background-color: rgb(20, 155, 223);
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.14902) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.14902) 50%, rgba(255, 255, 255, 0.14902) 75%, transparent 75%, transparent);
+	background-repeat: repeat-x;
+	background-size: 40px 40px;
+	box-shadow: rgba(0, 0, 0, 0.14902) 0px -1px 0px 0px inset;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	display: block;
+	height: 30px;
+	width: 650px;
+	text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+	transition-property: width;
+	transition-timing-function: ease;
+}
+#footer {
+	width: 100%;
+	height: 15%;
+	background: #CFC;
+}
+.bird-name {
+	height: 43px;
+	background: url(../img/ziti.gif) center top no-repeat;
+	filter: Chroma( Color=#992594); 
+	color: #992594;
+}
+.bird {
+	margin: 0 auto;
+	width: 40px;
+	height: 44px;
+	margin-top: 50px;
+}
+.btn-grp {
+	margin-top: 50px;
+	display: inline-block;
+	width: 136px;
+	height: 50px;
+	background: #61befb url(../img/play.png) left bottom no-repeat;
+}
+#restart-game {
+	background: #61befb url(../img/start.png) left bottom no-repeat;
+}
+.mark {
+	margin-top: 30px;
+}
+.mark, #score {
+	filter: Chroma( Color=#992594);  
+	color: #fff;
+}
+.ready {
+	margin-top: 30px;
+	filter: Chroma( Color=#992594);  
+	color: #992594;
+}
+.figure {
+	margin: 0 auto;
+	width: 50px;
+	height: 94px;
+	background: #61befb url(../img/figure.gif) left bottom no-repeat;
+	margin-top: 20px;
+}
+.game-over {
+	filter: Chroma( Color=#992594); 
+	color: #992594;
+}
+.sum {
+	margin-top: 40px;
+	width: 280px;
+	height: 100px;
+	line-height: 100px;
+	border:solid 1px #669;
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	background: #3ED657;
+	vertical-align: middle;
+}
+.sum-score {
+	filter: Chroma( Color=#C93);  
+	color: #C93;
+}
+#ok_sound {
+	position: absolute;
+}
+#fly-et {
+	position: absolute;
+	left: 47%;
+	top: 50%;
+	z-index: 1000;
+}
+.rawPipe {
+	position: absolute;
+	background-color: green;
+}
+
+#change-mode {
+	float: left;
+	color: #71B471;
+}
+
+
+.none {
+	display: none;
+}

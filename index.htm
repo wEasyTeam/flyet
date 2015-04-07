@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cn" class="no-select" onselectstart="return false">
+<head>
+	<meta charset="utf-8">
+	<title>Fly E.T</title>
+	<meta name="description" content="javascript flappy bird">
+	<meta name="author" content="E.Tw">
+	 
+	<!-- Le styles -->
+	<link href="css/screen.css" rel="stylesheet">
+</head>
+<body class="index-body">
+	<div class="wrap">
+		<div id="main">
+		<select id="change-mode">
+			<option value="0">跳跃模式</option>
+			<option value="1">游泳模式</option>
+		</select>
+        	<a id="about-us" href="aboutUS.htm" target="_blank">About Us</a>
+        	<div id="index">
+            	<div class="bird-name" ></div>
+                <div class="bird"></div>
+                <button id="start-game" class="btn-grp"></button>
+            </div>
+            <div id="begin" class="none">
+            	<div class="mark" id="mark">0</div>
+                <div class="ready">请准备！</div>
+                <div class="figure"></div>
+            </div>
+            <div id="over" class="none">
+            	<div class="game-over">游戏结束</div>
+                <div class="sum">
+                	<span class="award"></span>
+                	<span class="sum-score">得分<label id="score">0</label></span>
+                </div>
+                <button class="btn-grp" id="restart-game"></button>
+           	</div>
+			<img id="fly-et" height="30" width="30" src="img/bird.gif">
+        </div>
+        <div id="rull-bar" class="progress progress-striped active">
+		<div class="active-bar"></div>
+	 </div>
+        <div id="footer" class="none"></div>
+	</div>
+	
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/libs/jquery-1.9.1.min.js"></script>
+	<script src="js/et.js"></script>
+	<script src="js/springbird.js"></script>
+	<script src="js/main.js"></script>
+</body>
+<script>
+	var rollX = 0,
+		goRoll; 
+	function roll() {
+		goRoll = setInterval(function(){
+			rollX -=  2;
+			$('.active-bar').css('background-position-x',  rollX +  "px");
+		}, 40);
+	}
+</script>
+</html>
